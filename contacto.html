@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Demiurgo - Contacto</title>
+
+    <!-- Scripts JavaScript -->
+    <script src="main.js" defer></script>
+    <script src="validaciones.js" defer></script>
+
+    <!-- Enlace a los archivos CSS propios -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mediaquery.css">
+
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Encabezado principal del sitio -->
+    <header>
+        <div class="contenedor-header">
+
+            <!-- Parte superior del header: título + menú de navegación -->
+            <div class="header-top">
+                <h1>Contacto</h1>
+
+                <!-- Barra de navegación con Bootstrap -->
+                <nav class="navbar navbar-expand-md navbar-dark menu-bootstrap">
+                    <div class="container-fluid p-0">
+
+                        <!-- Botón hamburguesa visible en móvil -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Menú colapsable -->
+                        <div class="collapse navbar-collapse" id="menuPrincipal">
+                            <ul class="navbar-nav w-100 justify-content-center text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main class="container my-5">
+        <section class="formulario-contacto mx-auto p-4 border rounded bg-white">
+            <h2 class="text-center mb-4">Escríbenos</h2>
+
+            <!-- Contenedor para mostrar mensajes de validación -->
+            <div id="alerta-formulario"></div>
+
+            <!-- Formulario de contacto -->
+            <form id="formulario-contacto">
+
+                <!-- Campo: correo electrónico -->
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+                </div>
+
+                <!-- Campo: mensaje -->
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+
+                <!-- Botón para enviar el formulario -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-warning">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-contenido">
+            <p>Taller Demiurgo, todos los derechos reservados 2026</p>
+            <button id="boton">Ir arriba</button>
+        </div>
+    </footer>
+
+    <!-- Script de Bootstrap para que funcione el menú hamburguesa -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

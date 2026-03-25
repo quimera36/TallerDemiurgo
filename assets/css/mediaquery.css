@@ -1,0 +1,145 @@
+/* =========================
+   DESKTOP
+   Desde 1025px
+========================= */
+@media (min-width: 1025px) {
+    .header-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-header h1 {
+        text-align: center;
+    }
+
+    .menu-bootstrap {
+        width: 100%;
+    }
+
+    .menu-bootstrap .navbar-collapse {
+        justify-content: center;
+    }
+
+    .menu-bootstrap .navbar-nav {
+        gap: 20px;
+    }
+
+    .contenedor-principal {
+        flex-direction: row;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-contenido {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* =========================
+   TABLET
+   768px a 1024px
+========================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-header h1 {
+        text-align: center;
+    }
+
+    .menu-bootstrap {
+        width: 100%;
+    }
+
+    .menu-bootstrap .navbar-collapse {
+        justify-content: center;
+    }
+
+    .menu-bootstrap .navbar-nav {
+        gap: 20px;
+    }
+
+    .contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home,
+    aside {
+        max-width: 700px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-contenido {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* =========================
+   MOVIL
+   Hasta 767px
+========================= */
+@media (max-width: 767px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    .header-top {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contenedor-header h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .menu-bootstrap {
+        width: auto;
+    }
+
+    .menu-bootstrap .navbar-collapse {
+        margin-top: 10px;
+        background-color: #25343F;
+        padding: 10px 0;
+    }
+
+    .menu-bootstrap .nav-link {
+        padding: 8px 0;
+    }
+
+    .contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+        gap: 15px;
+    }
+
+    #home {
+        padding: 20px;
+    }
+
+    aside {
+        max-width: 100%;
+    }
+
+    .contenedor-logo img {
+        width: 140px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+}
